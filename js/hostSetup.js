@@ -1,4 +1,4 @@
-const socket =  io('http://first-year-project-personal.herokuapp.com');
+const socket =  io('https://first-year-project-personal.herokuapp.com');
 
 
 socket.on("connect", () => {

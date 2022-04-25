@@ -5,7 +5,7 @@ if (uname == null && localStorage.getItem('host') !== 'true') {
   window.location.href = "./";
 }
 
-const socket =  io('http://first-year-project-personal.herokuapp.com');
+const socket =  io('https://first-year-project-personal.herokuapp.com');
 var quiz = undefined
 var players = []
 

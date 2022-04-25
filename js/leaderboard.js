@@ -1,5 +1,5 @@
 var gamePin = localStorage.getItem('pin')
-const socket =  io('http://first-year-project-personal.herokuapp.com');
+const socket =  io('https://first-year-project-personal.herokuapp.com');
 
 // scoket connections below 
 socket.on("connect", () => {
