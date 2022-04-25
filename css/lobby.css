@@ -1,0 +1,22 @@
+.usernames {
+    margin: 0em 5em;
+}
+.usernames div {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.3em;
+    font-family: Montserrat, "Noto Sans Arabic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-top: 1em;
+}
+
+button { 
+    text-align: center;
+    display: block;
+    float: right;
+    margin-left: -120px;
+}
+
+.pin {
+    text-align: center;
+    color: white;
+}

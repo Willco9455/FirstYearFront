@@ -1,0 +1,45 @@
+body{ 
+    background-color: #46178f;
+}
+
+h1 {
+    box-shadow: 1em;
+    color: white;
+    text-align: center;
+    font-family: Montserrat, "Noto Sans Arabic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.header {
+    margin-left: auto;
+    margin-right: 0;
+    /* text-align: right; */
+}
+
+#spaceDiv{
+    float: right;
+    display: block;
+} 
+
+form {
+    text-align: center;
+
+}
+
+#pinDiv{
+    text-align: center;
+} input{ 
+    height: auto;
+    width: 120px;
+    border: none;
+    font-size: 1.5em;
+} button {
+    font-size: 1.5em;
+    width: 125px;
+}
+
+#spaceDiv{
+    display: block;
+    height: 5em;
+}

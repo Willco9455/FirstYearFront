@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- <script>
+      var uname = localStorage.getItem("uname")
+      if (uname != null) { 
+          window.location.href = `/lobby/${uname}`;
+      };
+    </script> -->
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    
+    <div id="spaceDiv">
+      <form action="./login.html">
+        <input type="submit" value="Log-in">
+      </form>
+      <form action="./signuppage.html">
+        <input type="submit" value="Register">
+      </form>
+    </div>
+    <h1>Kilburn Kwizziz</h1>
+    <div class="spacer"></div>
+    <div id="pinDiv">
+      <input id="pin" autocomplete="off" type="number" placeholder="Game Pin"><br>
+      <input id="name" autocomplete="off" type="text" placeholder="Name"><br>
+      <!-- <input type="number" id="pin" type="text" placeholder="Enter Pin"><br> -->
+
+      <!-- uses host variable passed in through server to show diffent buttons if there is already a host or not -->
+      <button  value="Enter" onclick="joinPress();">Join</button> <br> 
+      <span style="color: white; font-size:2em;">or </span><br><br>
+      <button  value="Enter" onclick="hostPress();">Host</button>
+      <!-- <br>
+      <button  value="Enter" onclick="randomButton();">Button</button>  -->
+       
+    </div>
+
+    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

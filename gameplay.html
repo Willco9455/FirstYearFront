@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="./css/gameplay.css">
+
+<title>KILBURN KWIZZIZZ</title>
+
+</head>
+
+<body id="main">
+<!-- displays the canvas which contains the timer-->
+<div class="fixed5">
+<canvas id="myCanvas" width="250" height="250"></canvas>
+</div>
+
+<!-- the below two divs of class fixed60 and fixed6 display the 4 answer buttons that make up the circle
+these are linked to their respective functions-->
+  <div class="fixed60" >
+  <button type = "submit" onclick="answer1();">
+     <img src="./assets/option1_t.png" />
+  </button>
+  <button type = "submit" onclick="answer2();">
+     <img  src="./assets/option2.jpg" />
+  </button>
+</div>
+
+<div class="fixed6">
+  <button type = "submit" onclick="answer3();">
+     <img src="./assets/option3.jpg" />
+  </button>
+  <button type = "submit" onclick="answer4();">
+     <img  src="./assets/option4.jpg" />
+  </button>
+</div>
+
+
+<!-- displays the answer options -->
+<div class="fixed2" style = "bottom: 10px; background-color: #00ff55;" > <p id="option3"></p> </div>
+<div class="fixed2" style = "background-color: #f21246;"> <p id="option1"></p> </div>
+<div class="fixed2" style = "right: 20px; background-color: #00ffff;"> <p id="option2"></p> </div>
+<div class="fixed2" style = "right: 20px;bottom: 10px; background-color: #ffd401;"> <p id="option4"></p> </div>
+
+<!-- displays the score -->
+<div class="fixed2" style = "right: 20px;top: 10px;"> <p id="score"> </p> </div>
+
+
+
+<!-- displays the question -->
+<div class="fixed8">
+   <p id="question"></p>
+</div>
+
+<!-- imports javascript script for functionality -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+<script src="./js/gameplay.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+.board {
+    font-size: 2em;
+    color: white;
+}
+
+.nextQButton {
+    display: none;
+}
+
+.endButton {
+    display: none;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+.boxes{
+    background-color: orange ;
+    padding: 5px;
+    font-size: 40px;
+    margin: 5px;
+    border-style: solid;
+}
+
+.board {
+    color: indigo;
+}

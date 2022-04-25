@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    
+    <style >
+		body{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+			background-color: #46178f;
+		}
+		.container{
+			position: absolute;
+			top: 80%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 400px;
+			padding: 40px;
+			background: rgba(0,0,0,.8);
+			box-sizing: border-box;
+			box-shadow: 0 15px 25px rgba(0,0,0,.5);
+			border-radius: 10px;
+		}
+		.container h1{
+			margin: 0 0 30px;
+			padding: 0;
+			color: #fff;
+			text-align: center;
+		}
+		.container .one input{
+			width: 100%;
+			padding: 10px 0;
+			font-size: 16px;
+			color: #fff;
+			letter-spacing: 1px;
+			margin-bottom: 30px;
+			border: none;
+			border-bottom: 1px solid #fff;
+			outline: none;
+			background: transparent;
+
+		}
+		.container button{
+			background: transparent;
+			border: none;
+			outline: none;
+			color: #fff;
+			background: #03a9f4;
+			padding: 10px 20px;
+			cursor: pointer;
+			border-radius: 5px;
+		}
+		.container .label p{			
+			color: white;
+		}
+
+        .container h2{
+            color: white;
+        }
+
+ 
+	</style>
+
+</head>
+
+    <body>
+        <div class="container">
+            <h1>Register</h1>
+            <form action="./php/addlogin.php">
+            
+                <div class="one">
+                    <h2>Username:</h2>
+                    <input type="text"name="username"required placeholder="Please enter your username:">
+                </div>
+            
+            
+                <div class="one">
+                    <h2>Email:</h2>
+                    <input type="text"name="email"required placeholder="Please enter your email:">
+                </div>
+                
+                <div class="one">
+                  <h2>First name:</h2>
+                  <input type="text"name="fname"required placeholder="Please enter your first name:">
+               </div>
+
+               <div class="one">
+                 <h2>Last name:</h2>
+                 <input type="text"name="lname"required placeholder="Please enter your last name:">
+               </div>
+ 
+              <div class="one">
+                <h2>DOB:</h2>
+                <input type="date"name="dob"required placeholder="Please select a date:">
+              </div>
+
+             <div class="one">
+               <h2>Password:</h2>
+               <input type="password"name="pass"required placeholder="Please enter your password:">
+            </div>
+                <p>
+                  <button class="button">Enter</button>
+                  <button class = "button"><a href = "./login.html">Go to login page</button>
+                </p>
+            
+            </form>
+            
+        </div>
+
+
+    </body>
+</html>
+
+

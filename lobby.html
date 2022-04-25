@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lobby</title>
+    <!-- <script>
+      var uname = localStorage.getItem("uname")
+      if (uname == null) { 
+          window.location.href = '/';
+      };
+    </script> -->
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/lobby.css" />
+  </head>
+  <body>
+    
+    <h1>Lobby</h1>
+    <h2 class="pin" id="pin"></h2>
+    <!-- start game button invisible unless host -->
+    <button id="startButton" value="Enter" onclick="startGame();" style="display: none;">Start</button>
+
+    <h2 id="hostName" style="color: white; text-align: center;"></h2>
+    
+    <div style="padding: 0em 2em; color: white;" class="usernames" id="usernames">
+    </div>
+    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+    <script src="./js/lobby.js"></script>
+  </body>
+</html>

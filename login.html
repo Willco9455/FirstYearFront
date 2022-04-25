@@ -1,0 +1,90 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Log In</title>
+	<style >
+		body{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+			background-color: #46178f;
+		}
+		.box{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 400px;
+			padding: 40px;
+			background: rgba(0,0,0,.8);
+			box-sizing: border-box;
+			box-shadow: 0 15px 25px rgba(0,0,0,.5);
+			border-radius: 10px;
+		}
+		.box h1{
+			margin: 0 0 30px;
+			padding: 0;
+			color: #fff;
+			text-align: center;
+		}
+		.box .inputBox input{
+			width: 100%;
+			padding: 10px 0;
+			font-size: 16px;
+			color: #fff;
+			letter-spacing: 1px;
+			margin-bottom: 30px;
+			border: none;
+			border-bottom: 1px solid #fff;
+			outline: none;
+			background: transparent;
+
+		}
+		.box button{
+			background: transparent;
+			border: none;
+			outline: none;
+			color: #fff;
+			background: #03a9f4;
+			padding: 10px 20px;
+			cursor: pointer;
+			border-radius: 5px;
+		}
+		.box .label p{
+			
+			color: white;
+
+		}
+
+
+
+ 
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h1>login</h1><br>
+		<form action = "./php/checklogin.php">
+			<div class="inputBox">
+				<input type="Text" name="Userlogin" id="Userlogin" placeholder="username" required=""><br>
+				
+			</div>
+			<div class='label'>
+				<p id="tip"></p>
+			</div>	
+			
+			
+			<div class="inputBox">
+				<input type="Text" name="Passlogin" id="Passlogin" placeholder="password" required=""><br><br>
+			</div>
+			<button class="button">Enter</button>
+			
+			<p class="message" style="color: white;">Not regisered? <a href="./signuppage.html">Create an account</a></p>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+body {
+  background-color: ivory;
+}
+@media only screen and (min-width: 1441px) {
+  /* positioning and formatting for answer option rectangles */
+  div.fixed2 {
+    position: fixed;
+    text-align: center;
+    right: 1000px;
+    bottom: 120px;
+    width: 900px;
+    height: 100px;
+  }
+
+  /* positioning for timer */
+  div.fixed5 {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+  }
+
+  /* positioning for answer buttons */
+  div.fixed6 {
+    position: fixed;
+    right: 750px;
+    top: 300px;
+  }
+
+/* positioning for answer buttons */
+  div.fixed60 {
+    position: fixed;
+    right: 750px;
+    top: 87px;
+  }
+
+
+  /* positioning and formatting for question */
+  div.fixed8 {
+    position: fixed;
+    left: 20px;
+    top: 10px;
+    width: 900px;
+    height: 100px;
+  }
+
+  /* sets font size for timer, question and answer options */
+  p{
+  font-size: 40px;
+  }
+
+  img{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+#nextQ {
+  font-size: large;
+}
+
+.answer {
+  color: white;
+  text-align: center;
+  padding-top: 360px; 
+  font-size: 5em;
+}
